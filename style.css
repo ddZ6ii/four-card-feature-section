@@ -128,3 +128,39 @@ footer .wrapper.narrow {
 #calculator {
   border-color: var(--primary-blue);
 }
+
+@media (min-width: 1200px) {
+  body {
+    height: 100dvh;
+    display: grid;
+    align-content: space-around;
+  }
+
+  .wrapper,
+  .wrapper.narrow,
+  footer .wrapper.wrapper.narrow {
+    margin-block: 0;
+  }
+  .cards-layout {
+    grid-template-areas:
+      'supervisor team-builder calculator'
+      'supervisor karma        calculator';
+    /* Ensure columns have the same width */
+    grid-auto-columns: 1fr;
+    align-items: center;
+    gap: var(--spacing-base);
+  }
+
+  #supervisor {
+    grid-area: supervisor;
+  }
+  #team-builder {
+    grid-area: team-builder;
+  }
+  #karma {
+    grid-area: karma;
+  }
+  #calculator {
+    grid-area: calculator;
+  }
+}
