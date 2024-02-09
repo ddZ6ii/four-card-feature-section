@@ -24,3 +24,107 @@
   --spacing-base: 2rem;
   --spacing-lg: calc(var(--spacing-base) * 2);
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100dvh;
+  color: var(--neutral-dark-blue);
+  font: var(--fs-base) / 1.5 var(--ff-sans);
+  font-weight: var(--fw-regular);
+}
+
+footer span {
+  color: red;
+}
+
+h1 {
+  margin-bottom: var(--spacing-sm);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-xl);
+}
+
+h1 span {
+  font-weight: var(--fw-bold);
+}
+
+p {
+  color: var(--neutral-gray);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-md);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  margin: var(--spacing-lg) auto;
+  max-width: 65rem;
+}
+
+.wrapper.narrow {
+  margin-bottom: var(--spacing-base);
+  width: min(55ch, 100% - var(--spacing-lg));
+  text-align: center;
+}
+
+footer .wrapper.narrow {
+  margin-bottom: var(--spacing-lg);
+}
+
+.cards-layout {
+  margin: 0 auto;
+  display: grid;
+  gap: var(--spacing-base);
+}
+
+.card {
+  margin: 0 auto;
+  padding: 1.5rem;
+  min-height: 200px;
+  max-width: min(340px, 100%);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-top: 4px solid transparent;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 0.3rem;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+.card p {
+  font-size: var(--fs-base);
+}
+
+.card img {
+  margin: var(--spacing-sm) 0 0 auto;
+  display: block;
+}
+
+#supervisor {
+  border-color: var(--primary-cyan);
+}
+#team-builder {
+  border-color: var(--primary-red);
+}
+#karma {
+  border-color: var(--primary-orange);
+}
+#calculator {
+  border-color: var(--primary-blue);
+}
