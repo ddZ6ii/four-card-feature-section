@@ -1,0 +1,19 @@
+{
+  "name": "four-card-feature-section-master",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "repository": "git@github.com:ddZ6ii/four-card-feature-section-master.git",
+  "author": "Denis Dezest <denis.dezest@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel --open chrome",
+    "build": "parcel build --dist-dir public"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.35",
+    "postcss-modules": "^6.0.0",
+    "postcss-uncss": "^0.17.0",
+    "uncss": "^0.17.3"
+  }
+}
