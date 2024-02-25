@@ -12,13 +12,13 @@
   --fw-regular: 400;
   --fw-bold: 600;
 
-  --primary-red: hsl(0, 78%, 62%);
-  --primary-cyan: hsl(180, 62%, 55%);
-  --primary-orange: hsl(34, 97%, 64%);
-  --primary-blue: hsl(212, 86%, 64%);
-  --neutral-dark-blue: hsl(234, 12%, 34%);
-  --neutral-gray: hsl(229, 6%, 66%);
-  --neutral-light-gray: hsl(0, 0%, 98%);
+  --primary-red: #ea5353;
+  --primary-cyan: #45d3d3;
+  --primary-orange: #fcaf4a;
+  --primary-blue: #549ef2;
+  --neutral-dark-blue: #4c4e61;
+  --neutral-gray: #6f7177;
+  --neutral-light-gray: #fafafa;
 
   --spacing-sm: calc(var(--spacing-base) / 2);
   --spacing-base: 2rem;
@@ -45,7 +45,7 @@ body {
 }
 
 footer span {
-  color: red;
+  color: deeppink;
 }
 
 h1 {
@@ -64,9 +64,37 @@ p {
   font-size: var(--fs-md);
 }
 
+/* The order of styling rules for links matters */
+a,
+a:link {
+  text-underline-offset: 0.2em;
+  color: blue;
+  /* outline: none; */
+}
+a:visited {
+  color: purple;
+}
+a:focus-visible {
+  outline-color: blue;
+  outline-offset: 0.1em;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+}
+a:active {
+  color: red;
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   display: block;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .wrapper {
@@ -113,7 +141,6 @@ footer .wrapper.narrow {
 
 .card img {
   margin: var(--spacing-sm) 0 0 auto;
-  display: block;
 }
 
 #supervisor {
